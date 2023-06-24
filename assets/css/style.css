@@ -17,23 +17,7 @@ body {
   z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9)
-{
-  .video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-}
 
-@media (max-aspect-ratio: 16/9)
-{
-  .video{
-    width: auto;
-    height: 100%;
-  }
-}
 
 
 body::before {
@@ -75,6 +59,24 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+@media (min-aspect-ratio: 16/9)
+{
+  .video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+@media (max-aspect-ratio: 16/9)
+{
+  .video{
+    width: auto;
+    height: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
