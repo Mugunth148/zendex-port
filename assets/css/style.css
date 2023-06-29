@@ -7,16 +7,10 @@ body {
   background-color: #040404;
   color: #fff;
   position: relative;
-  background: transparent;
+  
 }
 
- 
-.video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
+
 
 @media (min-aspect-ratio: 16/9)
 {
@@ -52,8 +46,17 @@ body::before {
 }
 
 #name {
-  color: #15bb62;
-}
+    background: linear-gradient(
+      to right, 
+      hsl(152, 93%, 49%), 
+      hsl(204 100% 59%),
+      hsla(289, 56%, 56%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
 
 @media (min-width: 1024px) {
   body::before {
@@ -67,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: #35e888;
+  color: blue;
   text-decoration: none;
 }
 
@@ -92,8 +95,26 @@ h6 {
   display: flex;
   align-items: center;
   z-index: 997;
-  overflow-y: auto;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(125, 12, 118) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgb(232, 120, 232) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
 
 #header * {
   transition: ease-in-out 0.3s;
@@ -123,7 +144,7 @@ h6 {
 
 #header h2 span {
   color: #fff;
-  border-bottom: 2px solid #18d26e;
+  border-bottom: 2px solid lightskyblue;
   padding-bottom: 6px;
 }
 .summary{
@@ -156,7 +177,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #18d26e;
+  background: lightskyblue ;
 }
 
 @media (max-width: 992px) {
@@ -282,7 +303,7 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: lightblue;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -1251,7 +1272,7 @@ font-size: 18px;
 }
 
 .credits a {
-  color: #18d26e;
+  color: lightskyblue;
   transition: 0.3s;
 }
 
