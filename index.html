@@ -35,7 +35,7 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
-      <h1><a href="index.html">Hi I'm <span id="name">Mugunth</span></a></h1>
+      <h1><a href="index.html">Hi I'm <span id="header-name">Mugunth</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       <h2 class="summary">I like to craft solid and scalable frontend products with great user experiences</h2>
@@ -748,37 +748,53 @@
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
+      <!--<form action="https://formspree.io/f/xgejwndk" method="post">
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+          <input type="text" name="name"   placeholder="Full Name" required>
         </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        <div class="info-box">
+          <input type="email"  name="email"  placeholder="Email" required>
         </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
+      </div>
 
+         <div class="contact-container">
+        <div>
+          <input type="text"  name="subject" class="inside-contact" id="subject" placeholder="Subject" required>
+        </div>
+        <div>
+          <textarea name="message" id="message" rows="5" class="inside-contact" placeholder="Message" required></textarea>
+        </div>
+        <div>
+        <div class="submit"><button type="submit">Send Message</button></div>
+      </div>
     </div>
+  </div>-->
+       </form>
+     <div class="container-contact">  
+  <form id="contact-form" action="https://formspree.io/f/xgejwndk" method="post">
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+ 
+  
+
   </section><!-- End Contact Section -->
 
   <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
     {} <a href="#Home">Mugunth</a>
   </div>
 
