@@ -106,7 +106,7 @@
             </div>
           </div>
           <p>
-            I Model and Use 3D models in frontend web development as product visualization Which gives an idea of the Product to the users, With 
+            I Model and Use those 3D models in frontend web development as product visualization which gives an idea of the Product to the users, With 
              this Idea's can come true in more innovative and immersive 3D experiences being created for the Web
           </p>
         </div>
@@ -769,7 +769,7 @@
         <div class="submit"><button type="submit">Send Message</button></div>
       </div>
     </div>
-  </div>-->
+  </div>
        </form>
      <div class="container-contact">  
   <form id="contact-form" action="https://formspree.io/f/xgejwndk" method="post">
@@ -788,7 +788,29 @@
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
-  </form>
+  </form> -->
+  <form action="https://formspree.io/f/xgejwndk" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
  
   
 
