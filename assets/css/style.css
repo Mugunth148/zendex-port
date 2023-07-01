@@ -887,7 +887,7 @@ font-size: 18px;
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 16px 10px 16px;
+  padding: 11px 16px 10px 16px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -896,7 +896,7 @@ font-size: 18px;
   background: rgba(255, 255, 255, 0.1);
   margin: 0 3px 10px 3px;
   transition: all 0.3s ease-in-out;
-  border-radius: 4px;
+  border-radius: 15px;
 }
 
 .portfolio #portfolio-flters li:hover,
