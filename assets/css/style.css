@@ -65,7 +65,7 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: skyblue;
   text-decoration: none;
 }
 
@@ -452,7 +452,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: skyblue;
   margin: 4px 10px;
 }
 
@@ -479,7 +479,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: skyblue;
   font-family: "Poppins", sans-serif;
 }
 
@@ -501,7 +501,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #18d26e;
+  color: skyblue;
   line-height: 0;
 }
 
@@ -512,7 +512,6 @@ section .container {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-
 
 .counts {
   padding: 70px 0 60px;
@@ -525,6 +524,7 @@ section .container {
   position: relative;
   text-align: center;
   background: rgba(255, 255, 255, 0.08);
+  border-radius:35px;
 }
 
 .counts .count-box i {
@@ -535,7 +535,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: skyblue;
   border-radius: 50px;
   line-height: 0;
 }
@@ -554,6 +554,11 @@ section .container {
   font-size: 14px;
 }
 
+.counts .count-box:hover {
+  transition: 0.01;
+  border-radius:50px;
+
+}
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
@@ -587,7 +592,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #18d26e;
+  background-color: skyblue;
 }
 
 /*--------------------------------------------------------------
@@ -599,6 +604,7 @@ section .container {
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
+  border-radius:25px;
 }
 
 .interests .icon-box i {
@@ -709,7 +715,7 @@ section .container {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: skyblue;
 }
 
 /*--------------------------------------------------------------
@@ -743,7 +749,7 @@ font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: skyblue;
   margin-bottom: 10px;
 }
 
@@ -777,8 +783,8 @@ font-size: 18px;
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: skyblue;
+  border: 2px solid skyblue;
 }
 
 /*--------------------------------------------------------------
@@ -795,7 +801,7 @@ font-size: 18px;
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: skyblue;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -840,8 +846,8 @@ font-size: 18px;
 }
 
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: skyblue;
+  border-color: skyblue;
 }
 
 .services .icon-box:hover .icon {
@@ -849,11 +855,11 @@ font-size: 18px;
 }
 
 .services .icon-box:hover .icon i {
-  color: #18d26e;
+  color: skyblue;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: skyblue;
 }
 
 .services .icon-box:hover h4 a,
@@ -866,6 +872,7 @@ font-size: 18px;
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  
 }
 
 .portfolio #portfolio-flters {
@@ -894,7 +901,7 @@ font-size: 18px;
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: skyblue;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -994,7 +1001,7 @@ font-size: 18px;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: skyblue;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1088,7 +1095,7 @@ font-size: 18px;
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: skyblue;
 }
 
 /*--------------------------------------------------------------
@@ -1099,11 +1106,12 @@ font-size: 18px;
   padding: 20px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
+  border-radius:25px;
 }
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: skyblue;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -1183,13 +1191,14 @@ font-size: 18px;
  .contact .php-email-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
+  
 }
 
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   background: #ed3c0d;
-  text-align: left;
+  text-align: center;
   padding: 15px;
   font-weight: 600;
 }
@@ -1201,7 +1210,7 @@ font-size: 18px;
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
+  background: skyblue;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1221,14 +1230,14 @@ font-size: 18px;
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid skyblue;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius:25px;
   box-shadow: none;
   font-size: 14px;
   background: rgba(255, 255, 255, 0.08);
@@ -1263,16 +1272,19 @@ font-size: 18px;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #18d26e;
-  border: 0;
+  background: skyblue;
+  border:0;
   padding: 10px 30px;
   color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
+  transition: 0.2s;
+  border-radius: 8px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #15bb62;
+  background: lightblue;
+  border-radius: 25px;
+  padding: 8px 25px;
+
 }
 
 @keyframes animate-loading {
@@ -1305,12 +1317,12 @@ font-size: 18px;
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: transparent;
   }
 }
 
 .credits a {
-  color: lightskyblue;
+  color: skyblue;
   transition: 0.3s;
 }
 
