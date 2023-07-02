@@ -22,6 +22,7 @@ body {
 	font-size: 1.1em;
 	margin: 0 auto;
 	padding: 0;
+	overflow: hidden;
 }
 button {
 	font-family: "Open Sans";
