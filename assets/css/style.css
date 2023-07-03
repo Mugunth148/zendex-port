@@ -630,8 +630,9 @@ section .container {
   width:25px;
   height:25px; 
 }
-
-#npm-logo,
+#figma {
+  width: 20px;
+}
 #b-logo,
 #cb-logo {
   width: 30px;
@@ -1277,7 +1278,7 @@ font-size: 18px;
   padding: 10px 30px;
   color: #fff;
   transition: 0.2s;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
