@@ -508,6 +508,90 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
+/* -------------------------------------------------------------
+# Cv 
+---------------------------------------------------------------- */
+.cv-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  transition: 1s;
+}
+
+.hire-me {
+  background: rgba(255, 255, 255, 0.1);
+  width: 45%  ;
+  color: #fff;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  border:0;
+  height: 50px;
+  font-size: 20px;
+  transition: 0.6s;
+}
+
+.download-cv {
+  background: rgba(255, 255, 255, 0.1);
+  width: 45%;
+  color: #fff;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  border:0;
+  height: 50px;
+  font-size: 20px;
+  transition: 0.6s;
+  
+}
+
+.hire-me:hover {
+  padding-left: 20px;
+  height: 55px;
+  width: 48%;
+  background: lightblue;
+  transition: 0.5s;
+  font-size: 22px;
+}
+
+.download-cv:hover {
+  padding-left: 20px;
+  height: 55px;
+  width: 48%;
+  background: lightblue;
+  transition: 0.5s;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .hire-me {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: lightblue;
+  }
+  .download-cv {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .hire-me:hover,
+  .download-cv:hover {
+    background-color: aliceblue;
+    width: 100%;  
+  }
+}
+  
+
+
 
 /*--------------------------------------------------------------
 # Counts

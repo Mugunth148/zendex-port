@@ -102,6 +102,33 @@
     }
   }, true)
 
+  /***
+       * Download CV Link
+  *****// 
+
+  // function downloadFile() {
+  //   var href = "path/to/file.pdf";
+  //   var download = document.getElementById("download-cv");
+  //   download.href = href;
+  //   download.download = "https://drive.google.com/file/d/15zFF8Tn78nlVcukmY9loumpaNGgnl86A/view?usp=drive_link";
+  //   download.click();
+  // }
+  // **********While use this code for download it from url**********//
+
+  function navigateToID() {
+    var id = "my-id";
+    window.location.href = "#contact";
+  }
+
+  function downloadFile() {
+    var href = "/assets/Mugunth.pdf";
+    var downloadName = "Mugunth.pdf";
+    var link = document.createElement("a");
+    link.href = href;
+    link.download = downloadName;
+    link.click();
+  }
+
   /**
    * Activate/show sections on load with hash links
    */
