@@ -579,12 +579,13 @@ section .container {
   }
 
   .hire-me {
+    height: 60px;
     width: 100%;
     margin-bottom: 20px;
     background-color: lightblue;
   }
   .download-cv {
-    height: 50px;
+    height: 60px;
     width: 100%;
     margin-bottom: 10px;
   }
@@ -595,8 +596,6 @@ section .container {
   }
 }
   
-
-
 
 /*--------------------------------------------------------------
 # Counts
