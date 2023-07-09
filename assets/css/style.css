@@ -550,6 +550,11 @@ section .container {
   
 }
 
+.download-cv a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .hire-me:hover {
   padding-left: 20px;
   height: 55px;
@@ -585,7 +590,7 @@ section .container {
   }
   .hire-me:hover,
   .download-cv:hover {
-    background-color: aliceblue;
+    background-color:rgba(255, 255, 255, 0.1);
     width: 100%;  
   }
 }

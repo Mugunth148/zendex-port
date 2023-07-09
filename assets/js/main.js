@@ -115,19 +115,19 @@
   // }
   // **********While use this code for download it from url**********//
 
-  function navigateToID() {
-    var id = "my-id";
-    window.location.href = "#contact";
-  }
+  // function navigateToID() {
+  //   var id = "my-id";
+  //   window.location.href = "#contact";
+  // }
 
-  function downloadFile() {
-    var href = "/assets/Mugunth.pdf";
-    var downloadName = "Mugunth.pdf";
-    var link = document.createElement("a");
-    link.href = href;
-    link.download = downloadName;
-    link.click();
-  }
+  // function downloadFile() {
+  //   var href = "/assets/Mugunth.pdf";
+  //   var downloadName = "Mugunth.pdf";
+  //   var link = document.createElement("a");
+  //   link.href = href;
+  //   link.download = downloadName;
+  //   link.click();
+  // }
 
   /**
    * Activate/show sections on load with hash links
