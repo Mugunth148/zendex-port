@@ -1,3 +1,4 @@
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -6,9 +7,13 @@ body {
   background-color: #040404;
   color: #fff;
   position: relative;
+  
 }
 
-@media (min-aspect-ratio: 16/9) {
+
+
+@media (min-aspect-ratio: 16/9)
+{
   .video {
     position: absolute;
     right: 0;
@@ -16,16 +21,22 @@ body {
     z-index: -1;
   }
 }
-@media (max-aspect-ratio: 16/9) {
-  .video {
+
+@media (max-aspect-ratio: 16/9)
+{
+  .video{
     width: auto;
     height: 100%;
   }
 }
+
+
+
+
 body::before {
   content: "";
   position: fixed;
-  background: black;
+  background:black;
   background-size: cover;
   left: 0;
   right: 0;
@@ -35,17 +46,24 @@ body::before {
 }
 
 #header-name {
-  background: linear-gradient(to right, hsl(152, 93%, 49%), hsl(204, 100%, 59%), hsl(289, 56%, 56%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
+    background: linear-gradient(
+      to right, 
+      hsl(152, 93%, 49%), 
+      hsl(204 100% 59%),
+      hsla(289, 56%, 56%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
 
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
   }
 }
+
 a {
   color: skyblue;
   text-decoration: none;
@@ -65,6 +83,8 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -76,23 +96,26 @@ h6 {
   align-items: center;
   z-index: 997;
   overflow: auto;
-  background: linear-gradient(315deg, rgb(125, 12, 118) 3%, rgb(60, 132, 206) 38%, rgb(48, 238, 226) 68%, rgb(232, 120, 232) 98%);
+  background: linear-gradient(315deg, rgb(125, 12, 118) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgb(232, 120, 232) 98%);
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
 }
 
+
 @keyframes gradient {
   0% {
-    background-position: 0% 0%;
+      background-position: 0% 0%;
   }
   50% {
-    background-position: 100% 100%;
+      background-position: 100% 100%;
   }
   100% {
-    background-position: 0% 0%;
+      background-position: 0% 0%;
   }
 }
+
+
 #header * {
   transition: ease-in-out 0.3s;
 }
@@ -124,8 +147,7 @@ h6 {
   border-bottom: 2px solid lightskyblue;
   padding-bottom: 6px;
 }
-
-.summary {
+.summary{
   min-width: 200px;
   max-width: 600px;
 }
@@ -155,27 +177,33 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: lightskyblue;
+  background: lightskyblue ;
 }
 
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
   }
+
   #header h2 {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 30px;
+    padding-left: 30px; 
   }
+
   #header .social-links {
     margin-top: 15px;
   }
+
   #header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
+
+
+
 /* Header Top */
 #header.header-top {
   height: 80px;
@@ -214,10 +242,12 @@ h6 {
   #header.header-top {
     height: 60px;
   }
+
   #header.header-top h1 {
     font-size: 26px;
   }
 }
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -241,7 +271,7 @@ h6 {
   position: relative;
 }
 
-.navbar li + li {
+.navbar li+li {
   margin-left: 30px;
 }
 
@@ -280,7 +310,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover > a:before,
+.navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -289,7 +319,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #fff;
 }
 
@@ -312,13 +342,16 @@ h6 {
   .mobile-nav-toggle {
     display: block;
   }
+
   .navbar ul {
     display: none;
   }
 }
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
+  
   top: 0;
   right: 0;
   left: 0;
@@ -350,10 +383,12 @@ h6 {
 
 .navbar-mobile li {
   padding: 12px 20px;
+  
 }
 
-.navbar-mobile li + li {
+.navbar-mobile li+li {
   margin: 0;
+  
 }
 
 .navbar-mobile a,
@@ -392,10 +427,14 @@ section .container {
   section {
     top: 120px;
   }
+
   section.section-show {
     top: 80px;
   }
 }
+
+
+
 .section-title h2 {
   font-size: 14px;
   font-weight: 500;
@@ -432,8 +471,10 @@ section .container {
 --------------------------------------------------------------*/
 #objective {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom:10px ;
 }
+
+
 
 .about-me .content h3 {
   font-weight: 700;
@@ -467,7 +508,6 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
-
 /* -------------------------------------------------------------
 # Cv 
 ---------------------------------------------------------------- */
@@ -485,12 +525,12 @@ section .container {
 
 .hire-me {
   background: rgba(255, 255, 255, 0.1);
-  width: 45%;
+  width: 45%  ;
   color: #fff;
   padding: 10px;
   border-radius: 25px;
   cursor: pointer;
-  border: 0;
+  border:0;
   height: 50px;
   font-size: 20px;
   transition: 0.6s;
@@ -503,10 +543,11 @@ section .container {
   padding: 10px;
   border-radius: 25px;
   cursor: pointer;
-  border: 0;
+  border:0;
   height: 50px;
   font-size: 20px;
   transition: 0.6s;
+  
 }
 
 .download-cv a {
@@ -536,6 +577,7 @@ section .container {
   .cv-container {
     flex-direction: column;
   }
+
   .hire-me {
     height: 60px;
     width: 100%;
@@ -549,15 +591,18 @@ section .container {
   }
   .hire-me:hover,
   .download-cv:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 100%;
+    background-color:rgba(255, 255, 255, 0.1);
+    width: 100%;  
   }
-}
+}  
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
+
 .counts {
   padding: 70px 0 60px;
+  
 }
 
 .counts .count-box {
@@ -566,7 +611,7 @@ section .container {
   position: relative;
   text-align: center;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 35px;
+  border-radius:35px;
 }
 
 .counts .count-box i {
@@ -598,9 +643,9 @@ section .container {
 
 .counts .count-box:hover {
   transition: 0.01;
-  border-radius: 50px;
-}
+  border-radius:50px;
 
+}
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
@@ -646,7 +691,7 @@ section .container {
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
-  border-radius: 25px;
+  border-radius:25px;
 }
 
 .interests .icon-box i {
@@ -658,7 +703,7 @@ section .container {
 .interests .icon-box h3 {
   font-weight: 700;
   margin: 0;
-  padding-left: 20px;
+  padding-left:20px;
   line-height: 1;
   font-size: 16px;
   color: #fff;
@@ -669,14 +714,12 @@ section .container {
 }
 
 .logo {
-  width: 25px;
-  height: 25px;
+  width:25px;
+  height:25px; 
 }
-
 #figma {
   width: 20px;
 }
-
 #b-logo,
 #cb-logo {
   width: 30px;
@@ -781,12 +824,11 @@ section .container {
   position: relative;
   font-family: "Poppins", sans-serif;
 }
-
 .resume em {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+font-family: "Poppins", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
 }
 
 .resume .resume-item h4 {
@@ -918,6 +960,7 @@ section .container {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  
 }
 
 .portfolio #portfolio-flters {
@@ -1112,7 +1155,7 @@ section .container {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -1126,6 +1169,7 @@ section .container {
     padding-top: 20px;
   }
 }
+
 .portfolio-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -1150,7 +1194,7 @@ section .container {
   padding: 20px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 25px;
+  border-radius:25px;
 }
 
 .contact .info-box i.bx {
@@ -1200,7 +1244,7 @@ section .container {
   background-color: rgb(17, 228, 158); 
   display:grid;
   grid-template-rows: 1fr 1fr 1fr 100%;
-
+  
 }
  #name {
   background-color: #444444;
@@ -1232,9 +1276,10 @@ section .container {
   padding: 0%;
   margin: 0%;
  } */
-.contact .php-email-form {
+ .contact .php-email-form {
   background: black;
   width: 100%;
+  
 }
 
 .contact .php-email-form .error-message {
@@ -1246,7 +1291,7 @@ section .container {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -1280,7 +1325,7 @@ section .container {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 25px;
+  border-radius:25px;
   box-shadow: none;
   font-size: 14px;
   background: rgba(255, 255, 255, 0.08);
@@ -1296,11 +1341,6 @@ section .container {
 
 .contact .php-email-form input::-moz-placeholder,
 .contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
@@ -1321,7 +1361,7 @@ section .container {
 
 .contact .php-email-form button[type=submit] {
   background: skyblue;
-  border: 0;
+  border:0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.2s;
@@ -1332,16 +1372,20 @@ section .container {
   background: lightblue;
   border-radius: 25px;
   padding: 8px 25px;
+
 }
 
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
+
 /*--------------------------------------------------------------
 # Credits
 --------------------------------------------------------------*/
@@ -1364,6 +1408,7 @@ section .container {
     background: transparent;
   }
 }
+
 .credits a {
   color: skyblue;
   transition: 0.3s;
@@ -1371,4 +1416,4 @@ section .container {
 
 .credits a:hover {
   color: #fff;
-}/*# sourceMappingURL=style.css.map */
+}
