@@ -1,2 +1,2 @@
 # zendex-port
-Config files for my GitHub profile.
+# This repository contains my personal portfolio website. It is built with React, TypeScript, and Material UI.
