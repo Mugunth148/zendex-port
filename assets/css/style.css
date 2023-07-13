@@ -1345,7 +1345,7 @@ section .container {
 /*--------------------------------------------------------------
 # Credits
 --------------------------------------------------------------*/
-.credits {
+.dev {
   position: fixed;
   right: 0;
   left: 0;
@@ -1358,17 +1358,17 @@ section .container {
 }
 
 @media (max-width: 992px) {
-  .credits {
+  .dev {
     text-align: center;
     padding: 10px;
     background: transparent;
   }
 }
-.credits a {
+.dev a {
   color: skyblue;
   transition: 0.3s;
 }
 
-.credits a:hover {
+.dev a:hover {
   color: #fff;
 }/*# sourceMappingURL=style.css.map */

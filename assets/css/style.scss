@@ -1389,7 +1389,7 @@ font-size: 18px;
 /*--------------------------------------------------------------
 # Credits
 --------------------------------------------------------------*/
-.credits {
+.dev {
   position: fixed;
   right: 0;
   left: 0;
@@ -1402,18 +1402,18 @@ font-size: 18px;
 }
 
 @media (max-width: 992px) {
-  .credits {
+  .dev {
     text-align: center;
     padding: 10px;
     background: transparent;
   }
 }
 
-.credits a {
+.dev a {
   color: skyblue;
   transition: 0.3s;
 }
 
-.credits a:hover {
+.dev a:hover {
   color: #fff;
 }
