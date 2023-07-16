@@ -1,4 +1,14 @@
+// Variables
 
+$skyblue: #00bfff;
+$text: white;
+$bg: black;
+
+
+
+
+
+// ************************************************************
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -97,8 +107,8 @@ h6 {
   z-index: 997;
   overflow: auto;
   background: linear-gradient(315deg, rgb(125, 12, 118) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgb(232, 120, 232) 98%);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+  background-size: 300% 300%;
   background-attachment: fixed;
 }
 
@@ -332,7 +342,7 @@ h6 {
   cursor: pointer;
   display: none;
   line-height: 0;
-  transition: 0.5s;
+  transition: 1s;
   position: fixed;
   right: 15px;
   top: 15px;
@@ -357,7 +367,7 @@ h6 {
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.9);
-  transition: 0.3s;
+  transition: 1s;
   z-index: 999;
   margin-top: 0;
 }
@@ -377,7 +387,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   overflow-y: auto;
-  transition: 0.3s;
+  transition: 2s;
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -407,7 +417,7 @@ section {
   top: 140px;
   bottom: 100%;
   opacity: 0;
-  transition: ease-in-out 0.4s;
+  transition: ease-in-out 1s;
   z-index: 2;
 }
 
